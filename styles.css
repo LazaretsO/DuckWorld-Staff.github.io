@@ -1,0 +1,327 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 14px;
+	background-color: #2a2a2a;
+}
+/* navigation */
+nav{
+	background-color: #262626;
+	height: 80px
+}
+nav .logo{
+	color: #fff;
+	line-height: 20px;
+	font-size: 38px;
+	float: left;
+	padding: 15px 15px;
+	padding-left: 35px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+.duck {
+  color: rgb(251, 114, 1);
+  font-size: 54px;
+}
+.duck-logo {
+  color: rgb(251, 114, 1);
+  font-size: 44px;
+}
+nav ul{
+	float: right;
+	padding: 15px 15px;
+	padding-right: 35px;
+	font-size: 17px;
+	margin-top: 20px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style-type: circle;
+}
+nav ul li.acitve a{
+	color: #ff6760;
+}
+nav ul li a{
+	color: #d8d8d8;
+	text-decoration: none;
+	margin-right: 35px;
+	text-transform: uppercase;
+}
+
+/*header*/
+header{
+	color: #d8d8d8;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.banner {
+  height: 1100px;
+  width: 100%;
+}
+header h1{
+	margin-top: 65px;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+header h1 span{
+	font-weight: bold;
+}
+header h2{
+	font-size: 36px;
+	margin: 25px 0;
+	font-weight: 300
+}
+header h2 span{
+	color: #eb615b;
+}
+
+.main-nav li a {
+  display: inline-block; 
+  color: #cccccc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  vertical-align: middle; /
+}
+
+.main-nav li a:hover:not(.dropbtn) {
+  background-color: #444;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropbtn::after {
+  content: ''; 
+  display: inline-block;
+  margin-left: 6px; 
+  vertical-align: middle; 
+  border-style: solid;
+  border-width: 4px 4px 0 4px; 
+  border-color: #cccccc transparent transparent transparent; 
+  transition: border-color 0.2s ease, transform 0.2s ease; 
+}
+
+.dropdown:hover .dropbtn::after {
+  border-color: white transparent transparent transparent; 
+}
+
+
+.dropdown-content {
+  opacity: 0; 
+  visibility: hidden; 
+  transform: translateY(-10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; 
+
+  position: absolute;
+  background-color: #3a3a3a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+  z-index: 1;
+  right: 0;
+  list-style: none;
+  padding: 5px 0; 
+  margin: 0;
+  margin-top: 5px; 
+  border-radius: 4px; 
+  text-align: left;
+}
+
+.dropdown-content li a {
+  color: #cccccc;
+  padding: 10px 16px; 
+  text-decoration: none;
+  display: block;
+  text-transform: none;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease; 
+}
+
+.dropdown-content li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0s; 
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #444;
+  color: white;
+}
+
+header a {
+	background-color: #ff6760;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10px;
+	margin: 10px 0 75px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.rules {
+  background-color: #372fcd;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10px;
+	margin: 10px 0px 75px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.personal {
+  background-color: #1ca707;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10px;
+	margin: 10px 0px 75px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.p-rules {
+  background-color: #df0909;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10px;
+	margin: 10px 0px 75px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.decor {
+  color: rgb(255, 60, 0);
+  font-weight: bold;
+}
+
+.faq-section {
+  max-width: 800px; /* Максимальная ширина блока FAQ */
+  margin: 40px auto; /* Отступы сверху/снизу и авто по бокам для центрирования */
+  padding: 20px;    /* Внутренние отступы */
+  text-align: left; /* Выравнивание текста по левому краю */
+  color: #cccccc; /* Цвет текста (можете поменять на свой) */
+}
+
+.faq-section h2 {
+  text-align: center; /* Заголовок секции по центру */
+  margin-bottom: 80px; /* Отступ снизу от заголовка */
+  color: #ffffff; /* Цвет заголовка (можете поменять) */
+  font-size: 40px;
+}
+
+.faq-list dt { /* Стили для вопроса */
+  font-weight: bold;  /* Жирный шрифт */
+  margin-top: 15px;   /* Отступ сверху перед вопросом */
+  color: #e0e0e0;   /* Цвет текста вопроса */
+  font-size: 1.6em;   /* Немного увеличить размер шрифта */
+}
+
+.faq-list dd { /* Стили для ответа */
+  margin-left: 0;     /* Убрать стандартный отступ слева для dd */
+  margin-top: 5px;    /* Небольшой отступ сверху перед ответом */
+  padding-left: 20px; /* Добавить небольшой отступ слева для визуального разделения */
+  border-left: 2px solid #555555; /* Декоративная линия слева */
+  line-height: 1.6;   /* Межстрочный интервал для лучшей читаемости */
+  font-size: 1.6em;
+}
+
+.faq-list dt:first-of-type {
+  margin-top: 0;
+}
+/*footer*/
+footer{
+	color: #d8d8d8;
+	text-align: center;
+
+}
+footer h3{
+	margin: 50px 0 25px;
+	font-size: 40px;
+  font-weight: bold;
+}
+
+footer p{
+	color: #858585;
+	font-size: 16px;
+	padding: 3px 0;
+
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.br {
+  color: #ff0000;
+  font-size: 2px;
+}
+footer p a{
+	color: #793f3d;
+}
+.socialIcons{
+	margin: 15px 0 50px;
+
+}
+.socialIcons a{
+	color: #fff;
+  text-decoration: none;
+
+}
+.socialIcons .fa-twitter{
+	background-color: #5daed5;
+	padding: 5px;
+	border-radius: 50%;
+}
+.socialIcons .fa-facebook{
+	background-color: #4470cf;
+	padding: 5px 8px;
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 640px){
+	.item{
+		width: 50%;
+		margin: 0 auto;
+		display: block;
+	}
+}
